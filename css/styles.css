@@ -25,9 +25,6 @@ body{
 .logo:focus{
     color:var(--accent-color)
 }
-ul{
-    list-style: none;
-}
 a {
     text-decoration: none;
 }
@@ -38,22 +35,26 @@ h1,h2,h3, p {
     margin-top: 0;
     margin-bottom: 0;
 }
-ul{
-    padding-left: 0;margin-top: 0;
+ul {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 0;
     margin-bottom: 0;
 }
-
-.container {
-    background-color:yellow;
-    width: 1200px;
-    padding-left: 15px;
-    padding-right: 15px;
+ /*HEADER*/
+ .container{
+   width: 1200px;
+   padding-left: 15px;
+   padding-right: 15px;
+   margin-left: auto;
+   margin-right: auto;
+   }
+ 
+ .main-header{
+    padding-top: 24px;
+    padding-bottom: 25px;
     margin-left: auto;
     margin-right: auto;
-}
-
-.main-header{
-    margin-bottom: 25px;
 }
 .navigation {
     display: flex;
@@ -61,7 +62,6 @@ ul{
 }
 .menu{
     display: flex;
-    align-items: center;
     column-gap: 50px;
 }
 .logo{
@@ -87,6 +87,12 @@ ul{
 .email-phone {
     display: flex;
     justify-content: space-between;
+    margin-left: auto;
+    align-items: center;
+}
+
+.phone{
+    margin-right:50px;
 }
 .email-phone .contacts {
     color: var(--main-text-color);
@@ -98,12 +104,16 @@ ul{
 .email-phone .contacts:hover,
 .email-phone .contacts:focus {
     color: var(--accent-color);
+}
+    /* HERO */
 
 .hero {
+    text-align: center;
     background-color: var(--bcgthird);
-    outline: solid teal;
+    padding: 200px 450px 280px 452px;
 }
 .hero-text{
+    margin-bottom: 30px ;
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
@@ -112,6 +122,11 @@ ul{
     color:var(--second-text-color)
 }
 .modal-button{
+    padding: 10px 32px;
+    border-radius: 4px;
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 216px;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.87; 
@@ -121,13 +136,22 @@ ul{
     color: #FFFFFF;
     background-color: var(--accent-color);
     cursor: pointer;
-
 }
 .modal-button:hover {
-    background-color: var(--accent-color)
-    color: var(--second-text-color)
+    background-color: var(--accent-color);
+    color: var(--second-text-color);
+}
+
+/* FEATURES */
+.titles{
+padding-top: 94px;
+padding-bottom: 94px;
+display: flex;
+justify-content: space-between;
+
 }
 .title{
+    margin: bottom 10px;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
@@ -136,12 +160,16 @@ ul{
     color: var(--headlines-title);
 }
 .title-text{
+    margin-right: 30px;
     color: var(--main-text-color);
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
 }
+
+/* SKILLS */
 .skills{
+    margin-bottom: 50px;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
@@ -149,10 +177,24 @@ ul{
     letter-spacing: 0.03em;
     color: var(--title-text-color);
 }
+.images{
+    padding-bottom: 94px;
+    display: flex;
+    justify-content: space-between;
+    column-gap: 30px;
+}
+
+/* TEAM */
 .team{
     background-color: var(--bcgsecond-color);
 }
+.team-list{
+    display: flex;
+    justify-content: space-between;
+    column-gap: 30px;
+}
 .team-label{
+    margin-bottom: 50px;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
@@ -163,7 +205,11 @@ ul{
 .team.card{
     background-color: var(--bcg-color);
 }
+.image{
+        margin-bottom: 10px;
+}
 .team-member{
+    margin-bottom: 10px;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
@@ -172,24 +218,40 @@ ul{
     color: var(--headlines-title);
 }
 .team-profession{
+    margin-bottom: 30px;
     font-size: 16px;
     line-height: 1.19; 
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--main-text-color);
 }
-/* * Стилі для футера */
+/* * FOOTER */
 footer{
     background-color: var(--bcgthird);
 }
+.basement{
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
 footer .logo {
+    display: block;
+    padding-top: 60px;
+    margin-bottom: 20px;
     font-family: 'Raleway';
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
     letter-spacing: 0.03em;
 }
+.adresses{
+    padding-bottom: 60px;
+    margin-right: auto;
+}
 .post-address{
+    margin-bottom: 9px;
     font-style: normal;
     font-size: 14px;
     line-height: 1.71;
