@@ -43,6 +43,7 @@ ul {
 }
  /*HEADER*/
  .container{
+   display: flex;
    width: 1200px;
    padding-left: 15px;
    padding-right: 15px;
@@ -273,10 +274,21 @@ footer .contacts:hover,
 footer .contacts:focus {
     color:var(--accent-color);
 }
+
+/* PORTFOLIO */
 .portfolio-page .filters{
     background-color: var(--bcgsecond-color);
 }
+.filters-item{
+    display: flex;
+    padding-top: 94px;
+    column-gap: 8px;
+    justify-content: center;
+}
 .filter-button{
+    padding: 6px 22px;
+    border-radius: 4px;
+    min-width: 73px;
     font-family: inherit;
     font-weight: 500;
     font-size: 16px;
@@ -295,6 +307,12 @@ footer .contacts:focus {
     color: var(--second-text-color);
     background-color: var(--accent-color);
 }
+.works-list{
+    padding-top: 30px;
+    padding-bottom: 94px;
+    gap: 30px;
+    flex-wrap: wrap;
+}
 .work-description{
     font-size: 16px;
     line-height: 1.88;
@@ -302,11 +320,15 @@ footer .contacts:focus {
     color: var(--main-text-color);
 }
 .work-title{
+    margin-bottom: 4px;
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
     color: var(--title-text-color);
+}
+.img{
+    margin-bottom: 20px;
 }
 
 
