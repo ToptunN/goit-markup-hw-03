@@ -105,7 +105,8 @@ ul {
 
 .hero {
    background-color: var(--bcgthird);
-   padding: 200px 280px;
+   padding-top: 200px;
+   padding-bottom: 280px;
 }
 .hero-text{
     width:60%;
