@@ -30,6 +30,8 @@ a {
 }
 img{
     display: block;
+    max-width: 100%;
+    height: auto;
 }
 h1,h2,h3, p {
     margin-top: 0;
@@ -331,10 +333,6 @@ footer .contacts:focus {
     line-height: 2;
     letter-spacing: 0.06em;
     color: var(--title-text-color);
-}
-.img{
-    max-width: 100%;
-    height: auto;
 }
 
 
